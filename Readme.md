@@ -22,9 +22,19 @@ docker ps -a
 docker logs <container_id>
 ```
 Save the installation password. For this instance 
-```7c8cb15505f846d386872300682062c7```
+```4a78e3a94b8641bb8f3b0c707d12694b```
 
 Check in the browser with URL: ```localhost:8080``` and use the previously got password 
+
+---
+
+### Jenkins agent with docker compose
+
+Create SSH-key with no pass phrase
+
+```shell
+ssh-keygen -t rsa -f jenkins_agent
+```
 
 ---
 
