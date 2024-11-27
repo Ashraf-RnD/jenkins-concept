@@ -21,25 +21,13 @@ docker ps -a
 
 docker logs <container_id>
 ```
+Get installation Password using
+```shell
+docker exec <container_id> cat /var/jenkins_home/secrets/initialAdminPassword
+```
 Save the installation password. For this instance 
-```4a78e3a94b8641bb8f3b0c707d12694b```
+```03836b98d01344d6ac8c6c5e66a2518c```
 
 Check in the browser with URL: ```localhost:8080``` and use the previously got password 
 
 ---
-
-### Jenkins agent with docker compose
-
-Create SSH-key with no pass phrase
-
-```shell
-ssh-keygen -t rsa -f jenkins_agent
-```
-
----
-
-#### Multi branch pipeline
-
-
-1. setup credentials 
-2. create jenkins file 
